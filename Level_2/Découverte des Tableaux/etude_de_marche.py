@@ -1,5 +1,5 @@
 n, m = int(input()), int(input())
-tab = [0]*m
+tab = [0]*n
 for i in range(m):
     tab[i] = int(input())
 for i in range(n):

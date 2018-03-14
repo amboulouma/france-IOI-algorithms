@@ -9,7 +9,7 @@ By Amine M. Boulouma [@aminemboulouma]
 ## Find me 
 
 * [Youtube](https://www.youtube.com/aminemboulouma)
-* [Linkedin](https://www.linkedin.com/m/aminemboulouma)
+* [Linkedin](https://www.linkedin.com/in/aminemboulouma)
 * [Facebook](https://www.facebook.com/aminemboulouma)
 * [Github](https://www.github.com/aminemboulouma)
 * [Gitlab](https://www.gitlab.com/aminemboulouma)

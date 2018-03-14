@@ -1,6 +1,6 @@
-# Algorithmic Exercices (France-IOI)[http://www.france-ioi.org/]
+# Algorithmic Exercices [France-IOId](http://www.france-ioi.org/)
 
-## (My public profile)[http://www.france-ioi.org/user/perso.php?sLogin=aminemboulouma]
+## [My public profiled](http://www.france-ioi.org/user/perso.php?sLogin=aminemboulouma)
 
 This is a repo containing my algorithmic solutions for France-IOI problems 
 
@@ -8,11 +8,11 @@ By Amine M. Boulouma [@aminemboulouma]
 
 ## Find me 
 
-* (Youtube)[https://www.youtube.com/aminemboulouma]
-* (Linkedin)[https://www.linkedin.com/m/aminemboulouma]
-* (Facebook)[https://www.facebook.com/aminemboulouma]
-* (Github)[https://www.github.com/aminemboulouma]
-* (Gitlab)[https://www.gitlab.com/aminemboulouma]
-* (Instagram)[https://www.instagram.com/aminemboulouma]
-* (Twitter)[https://www.twitter.com/aminemboulouma]
-* (Medium)[https://www.medium.com/@aminemboulouma]
+* [Youtubed](https://www.youtube.com/aminemboulouma)
+* [Linkedind](https://www.linkedin.com/m/aminemboulouma)
+* [Facebookd](https://www.facebook.com/aminemboulouma)
+* [Githubd](https://www.github.com/aminemboulouma)
+* [Gitlabd](https://www.gitlab.com/aminemboulouma)
+* [Instagramd](https://www.instagram.com/aminemboulouma)
+* [Twitterd](https://www.twitter.com/aminemboulouma)
+* [Mediumd](https://www.medium.com/@aminemboulouma)

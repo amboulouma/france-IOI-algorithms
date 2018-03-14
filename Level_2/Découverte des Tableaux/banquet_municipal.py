@@ -7,3 +7,4 @@ for i in range(m):
     tab[pos1],tab[pos2] = tab[pos2],tab[pos1]
 for i in range(n):
     print("{}".format(tab[i]))
+

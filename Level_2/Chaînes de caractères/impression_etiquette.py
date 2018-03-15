@@ -1,2 +1,2 @@
 s = input()
-for i in s: print(i)
+for i in s: print(i) 

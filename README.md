@@ -2,7 +2,7 @@
 
 ## [My public profile](http://www.france-ioi.org/user/perso.php?sLogin=aminemboulouma)
 
-This is a repo containing my algorithmic solutions for France-IOI problems 
+This is a repo containing my algorithmic solutions for France-IOI (http://www.france-ioi.org) problems 
 
 By Amine M. Boulouma [@aminemboulouma]
 

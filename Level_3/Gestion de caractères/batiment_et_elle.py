@@ -1,0 +1,1 @@
+print("{}{}".format(ord(input()[0]) - 64, chr(int(input()) + 64)))

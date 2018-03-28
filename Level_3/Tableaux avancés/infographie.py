@@ -3,8 +3,8 @@
 # and open the template in the editor.
 
 n, m = map(int, input().split())
-tab = [['.']*m]*n
-
+tab = [["."] * m for _ in range(n)]
+print(tab)
 nr = int(input())
 for i in range(nr):
     donneesRect = input().split()
@@ -13,8 +13,5 @@ for i in range(nr):
     for i in range(iLig1, iLig2 + 1):
         for j in range(iCol1, iCol2 + 1):
             tab[i][j] = c
-            
-for i in range(n):
-    for j in range(m):
-        print(tab[i][j], end='')
-    print()
+for ligne in tab:
+      print("".join(ligne))

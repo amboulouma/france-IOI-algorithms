@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)http://www.france-ioi.org/algo/course.php?idChapter=800&iOrder=10&idCourse=1808&idTask=1808&bPrintable=1 -->
+<html lang="en" class="wf-notosans-n7-active wf-notosans-i4-active wf-notosans-i7-active wf-firasans-n7-active wf-firasans-i4-active wf-firasans-i7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>France-IOI – Conclusion et synthèse des conseils</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Author" content="Arthur Charguéraud, Mathias Hiron">
+<meta name="Description" content="France-IOI – Conclusion et synthèse des conseils">
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/webfont.js"></script><script src="./France-IOI – Conclusion et synthèse des conseils_files/jquery.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/jquery-ui.min.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/jquery-migrate-1.0.0.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="./France-IOI – Conclusion et synthèse des conseils_files/jquery-ui-1.8.24.custom.css">
+<script type="text/javascript">sSelectedLanguage = "Python";</script>
+<script type="text/javascript">WebFontConfig = {
+   google: {
+      families: [ 'Noto Sans:,b,i,bi', 'Fira Sans:,b,i,bi' ]
+   }
+};
+(function(d) {
+   var wf = d.createElement('script'), s = d.scripts[0];
+   wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+   s.parentNode.insertBefore(wf, s);
+})(document);</script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/shCore.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/shBrushCpp.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/shBrushOCaml.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/shBrushJava.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/shBrushPython.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/shBrushDelphi.js" type="text/javascript"></script>
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/shBrushPlain.js" type="text/javascript"></script>
+<link type="text/css" rel="stylesheet" href="./France-IOI – Conclusion et synthèse des conseils_files/shCoreFranceIoi.css">
+<script type="text/javascript">
+var $buoop = {
+    reminder: 0,
+    newwindow: true
+}
+$buoop.ol = window.onload;
+window.onload=function(){
+ try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+ var e = document.createElement("script");
+ e.setAttribute("type", "text/javascript");
+ e.setAttribute("src", "http://browser-update.org/update.js");
+ document.body.appendChild(e);
+}
+
+$(function() {
+   if (XRegExp) {
+       var xExec = RegExp.prototype.exec;
+       RegExp.prototype.exec = function(str) {
+           if (!str.slice)
+               str = String(str);
+           return xExec.call(this, str);
+       };
+   }
+});
+
+SyntaxHighlighter.defaults.toolbar  = false;
+SyntaxHighlighter.defaults.gutter   = false;
+SyntaxHighlighter.all();
+</script>
+<script type="text/javascript">
+         var RecaptchaOptions = {
+            lang : 'en'
+         };
+         var idUser = 100031442;
+      </script>
+<link type="text/css" rel="stylesheet" href="./France-IOI – Conclusion et synthèse des conseils_files/jquery.qtip-2.0.0.min.css">
+<link type="text/css" rel="stylesheet" href="./France-IOI – Conclusion et synthèse des conseils_files/style.css">
+<script src="./France-IOI – Conclusion et synthèse des conseils_files/jquery.qtip.min.js" type="text/javascript"></script>
+<script type="text/javascript">setInterval(function() {
+   $.get('http://www.france-ioi.org/index.php?sOnlyBlock=communityMenu', function(result) {
+      $('.menuCommunity').replaceWith($(result).find('.menuCommunity'));
+   });
+}, 300000);</script><link rel="stylesheet" href="./France-IOI – Conclusion et synthèse des conseils_files/css" media="all">
+</head>
+<body style="zoom: 1;">
+<div class="printablebox"><script>
+function MyTooltip(selector, html)
+{
+   $(selector).qtip({
+      content: html,
+      position: {
+         my: "top center",
+         at: "bottom center"
+      },
+      style: {
+         width: 400,
+         classes: "qtip-dark qtip-rounded"
+      },
+      show: {
+         delay: 0
+      },
+      hide: {
+         effect: "mouseout",
+         fixed: true
+      }
+   });
+}
+$(function() {
+   $("#sLangProgDiv").buttonset().change(function() {
+      $("#selectLangage").submit();
+   });
+
+   $("#currentLangProgDiv").removeClass('hide').buttonset();
+
+   $("#currentLangProg").click(function() {
+      $("#divSelectLangProg").toggleClass('hide');
+   });
+
+   $("#sLangProgDiv label").each(function() {
+      var lang = $(this).find("span").text();
+      if (lang == "C++")
+         lang = "Cpp";
+      var text = $("div.PresentationLang[lang="+lang+"]").html();
+      var war = $("div.langWarning[lang="+lang+"]").html();
+      if (war !== null && war !== undefined)
+         text += war;
+      if (typeof($("#"+$(this).attr('for')).attr('disabled')) != 'undefined')
+         text = "Cet élément n'est pas disponible pour ce langage.";
+      MyTooltip($(this), text);
+   });
+
+});
+</script>
+<div id="divSelectLangProg" class="hide">Voir les cours et résoudre les problèmes en&nbsp;:<br><form id="selectLangage" action="http://www.france-ioi.org/algo/course.php?idChapter=800&amp;iOrder=10&amp;idCourse=1808&amp;idTask=1808" method="post"><div id="sLangProgDiv" class="ui-buttonset"><input type="radio" id="sLangProg-0" name="sLangProg" value="C" class="ui-helper-hidden-accessible"><label for="sLangProg-0" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only ui-corner-left" role="button" aria-disabled="false" data-hasqtip="true"><span class="ui-button-text">C</span></label><input type="radio" id="sLangProg-1" name="sLangProg" value="C++" class="ui-helper-hidden-accessible"><label for="sLangProg-1" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false" data-hasqtip="true"><span class="ui-button-text">C++</span></label><input type="radio" id="sLangProg-2" name="sLangProg" value="Pascal" class="ui-helper-hidden-accessible"><label for="sLangProg-2" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false" data-hasqtip="true"><span class="ui-button-text">Pascal</span></label><input type="radio" id="sLangProg-3" name="sLangProg" value="OCaml" class="ui-helper-hidden-accessible"><label for="sLangProg-3" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false" data-hasqtip="true"><span class="ui-button-text">OCaml</span></label><input type="radio" id="sLangProg-4" name="sLangProg" value="Java" class="ui-helper-hidden-accessible"><label for="sLangProg-4" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false" data-hasqtip="true"><span class="ui-button-text">Java</span></label><input type="radio" id="sLangProg-5" name="sLangProg" value="JavaScool" class="ui-helper-hidden-accessible"><label for="sLangProg-5" aria-pressed="false" class="ui-button ui-widget ui-state-default ui-button-text-only" role="button" aria-disabled="false" data-hasqtip="true"><span class="ui-button-text">JavaScool</span></label><input type="radio" id="sLangProg-6" name="sLangProg" checked="checked" value="Python" class="ui-helper-hidden-accessible"><label for="sLangProg-6" class="ui-state-active ui-button ui-widget ui-state-default ui-button-text-only ui-corner-right" aria-pressed="true" role="button" aria-disabled="false" data-hasqtip="true"><span class="ui-button-text">Python</span></label></div></form></div><div class="PresentationLang hide" lang="C">Le C est un langage de programmation <a href="http://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative" target="_blank">impératif</a> conçu pour la programmation système. Inventé au début des années 1970 avec UNIX, C est devenu un des langages les plus utilisés. De nombreux langages plus modernes se sont inspirés de sa syntaxe. Il privilégie la performance sur la simplicité de la syntaxe. [<a href="http://fr.wikipedia.org/wiki/C_(langage)" target="_blank">En savoir plus</a>]</div><div class="PresentationLang hide" lang="Cpp">Le C++ est un langage de programmation <a href="http://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative" target="_blank">impératif</a>. Inventé au début des années 1980, il apporte de nouveaux concepts au langage C (les <a href="http://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet">objets</a>, la généricité), le modernise et lui ajoute de nombreuses bibliothèques. C++ est devenu l'un des langages les plus utilisés. Sa performance et sa richesse en font le langage de prédilection pour les concours. [<a href="http://fr.wikipedia.org/wiki/C++_(langage)" target="_blank">En savoir plus</a>]</div><div class="PresentationLang hide" lang="Pascal">Pascal est un langage de programmation <a href="http://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative" target="_blank">impératif</a> inventé dans les années 1970 dans un but d'enseignement. Quoiqu'encore utilisé à cette fin, l'absence de bibliothèque standard en limite son utilisation malgré une grande efficacité. Sa syntaxe a été reprise par d'autres langages plus modernes avec plus ou moins de succès. [<a href="http://fr.wikipedia.org/wiki/Pascal_(langage)" target="_blank">En savoir plus</a>]</div><div class="langWarning hide" lang="Pascal"><br><br><b>Remarque&nbsp;:</b> Les cours pour ce langage ne sont disponibles que jusqu'au chapitre 4, «&nbsp;Lecture de l'entrée&nbsp;». Les corrections sont toutefois toujours fournies.</div><div class="PresentationLang hide" lang="OCaml">OCaml est un langage de programmation <a href="http://fr.wikipedia.org/wiki/Programmation_fonctionnelle" target="_blank">fonctionnel</a> inventé au milieu des années 1990. Il permet aussi une programmation <a href="http://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative" target="_blank">impérative</a> ou <a href="http://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet">objet</a>. Il permet d'écrire des programmes courts et faciles à vérifier et est ainsi utilisé pour certains systèmes embarqués très sensibles comme ceux des avions. Il est utilisé dans l'enseignement en classes préparatoires aux grandes écoles. [<a href="http://fr.wikipedia.org/wiki/OCaml" target="_blank">En savoir plus</a>]</div><div class="langWarning hide" lang="OCaml"><br><br><b>Remarque&nbsp;:</b> Les cours pour ce langage ne sont disponibles que jusqu'au chapitre 4, «&nbsp;Lecture de l'entrée&nbsp;». Les corrections sont toutefois toujours fournies.</div><div class="PresentationLang hide" lang="Java">Java est un langage de programmation <a href="http://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative" target="_blank">impératif</a> et <a href="http://fr.wikipedia.org/wiki/Programmation_orient%C3%A9e_objet">orienté objet</a>. Inventé au début des années 1990, il reprend en grande partie la syntaxe du langage C++ tout en la simplifiant, au prix d'une performance un peu moins bonne. S'exécutant dans une <a href="http://fr.wikipedia.org/wiki/Machine_virtuelle_Java">machine virtuelle</a>, il assure une grande portabilité et ses très nombreuses bibliothèques en font un langage très utilisé. On lui reproche toutefois la «&nbsp;verbosité&nbsp;» de son code. [<a href="http://fr.wikipedia.org/wiki/Java_(langage)" target="_blank">En savoir plus</a>]</div><div class="langWarning hide" lang="Java"><br><br><b>Remarque&nbsp;:</b> Pour un débutant souhaitant apprendre Java, nous conseillons fortement de commencer par JavaScool, plus facile à apprendre, bien que fortement similaire.</div><div class="PresentationLang hide" lang="JavaScool">Java's Cool (alias JavaScool) est conçu spécifiquement pour l'apprentissage des bases de la programmation. Il reprend en grande partie la syntaxe de Java sur laquelle il s'appuie, mais la simplifie pour un apprentissage plus aisé. La plateforme JavaScool est accompagnée d'un ensemble d'activités diverses de découverte de la programmation. [<a href="http://javascool.gforge.inria.fr/" target="_blank">En savoir plus</a>]</div><div class="PresentationLang hide" lang="Python">Python est un langage de programmation <a href="http://fr.wikipedia.org/wiki/Programmation_imp%C3%A9rative" target="_blank">impératif</a> inventé à la fin des années 1980. Il permet une programmation orientée objet et admet une syntaxe concise et claire qui en font un langage <b>très bien adapté aux débutants</b>. Étant un langage interprété, il n'est cependant pas aussi performant que d'autres langages. [<a href="http://fr.wikipedia.org/wiki/Python_(langage)" target="_blank">En savoir plus</a>]</div>    <div class="course">
+    <div class="course-contents">
+    <p>
+Cette liste de conseils devrait pouvoir vous permettre d'écrire des programmes plus clairs, plus faciles à relire et dans lesquels les bugs se voient plus rapidement. Bien sûr ce n'est pas une méthode miracle et on peut toujours passer à côté des bugs, mais elle permet d'en éliminer une grande partie. Elle n'est pas non plus complète, le plus important est surtout de comprendre les principes de base : faire le plus simple possible, et le plus lisible possible, même si cela implique de passer plus de temps à l'écriture du programme.
+</p><p>
+Tous les conseils donnés ici peuvent s'appliquer avant même l'écriture de la première ligne de code sur une machine : avant d'écrire votre programme, rappelez-vous qu'il vaut mieux en écrire une première version sur papier, en pseudo-code (voir le cours sur ce sujet). Ces conseils s'appliquent aussi bien sur ce pseudo-code que sur le programme final.
+</p><p>
+Il n'est ainsi jamais trop tôt pour essayer de simplifier son programme, mais il n'est jamais trop tard non plus. Même après avoir terminé d'écrire un code et commencé à le tester, si l'on réalise qu'une partie peut être simplifiée, mieux vaut le faire plutôt que de perdre du temps à débugger la version plus compliquée. Le temps passé à simplifier sera très probablement inférieur au temps gagné lors du débuggage.
+</p><p>
+Après avoir lu ce document, vous ne parviendrez probablement pas à appliquer pleinement tous les conseils dès vos prochains programmes. Revenez donc régulièrement sur ce document, et relisez-le en ayant devant vous les programmes que vous avez écrits récemment, cela vous aidera à voir quels points vous pouvez encore améliorer. Demandez-vous régulièrement si vous auriez pu faire plus simple, plus lisible.
+</p><p>
+Pour vous aider, voici un résumé du document, ne contenant que les titres. Relisez les explications correspondantes si vous ne voyez plus très clairement le sens d'un de ces titres.
+</p><p>
+
+</p><h3>Écrire du pseudo-code avant de coder</h3>
+<ol>
+   <li>Utiliser une syntaxe simplifiée pour se concentrer sur l'essentiel</li>
+   <li>Partir d'une grande page blanche et bien espacer pour faciliter les modifications</li>
+   <li>Bien choisir les identifiants dès le départ et les illustrer sur un shéma</li>
+</ol>
+
+<h3>Bien nommer ses variables et fonctions</h3>
+<ol>
+   <li>Nommer quoi et pourquoi
+      <ul>
+         <li>Remplacer les expressions par des variables</li>
+         <li>Remplacer les valeurs numériques par des constantes ou énumérations</li>
+         <li>Remplacer les groupes d’instructions par des fonctions</li>
+         <li>Remplacer certains tableaux par des structures</li>
+         <li>Ne pas trop compter sur les commentaires</li>
+      </ul>
+   </li>
+   <li>Comment choisir un nom
+      <ul>
+         <li>Pour une variable de stockage : que contient-elle ? </li>
+         <li>Pour un tableau : que contient une case ? </li>
+         <li>Pour un indice : qu’est-ce qu’il énumère ? </li>
+         <li>Pour une fonction : que renvoie-t-elle ? </li>
+         <li>Pour une procédure : que fait-elle ? </li>
+      </ul>
+   </li>
+   <li>Identifier clairement, pour ne pas confondre
+      <ul>
+         <li>Une variable ne doit servir qu'à une chose</li>
+         <li>Ne pas modifier les valeurs des paramètres des fonctions</li>
+         <li>Eviter les noms trop proches les uns des autres</li>
+      </ul>
+   </li>
+</ol>
+
+<h3>Eviter les répétitions : factoriser au maximum</h3>
+Quatre principales manières d'éviter les répétitions de code :
+<ol>
+   <li>Stocker le résultat d'un calcul dans une variable locale</li>
+   <li>Placer le code réutilisé dans une fonction</li>
+   <li>Utiliser une boucle, en stockant les différences dans un tableau</li>
+   <li>Réorganiser le code</li>
+</ol>
+
+<h3>Bien organiser les différentes parties du code</h3>
+<ol>
+   <li>Séparer les différents traitements en fonctions</li>
+   <li>Commencer par se débarrasser des problèmes</li>
+   <li>Isoler les cas particuliers du cas général</li>
+   <li>Faire les tests au début d'une fonction plutôt qu'avant son appel</li>
+   <li>Autres remarques
+      <ul>
+         <li>Ne pas utiliser d'instruction goto, ou équivalent</li>
+         <li>Déclarer les variables près du code</li>
+      </ul>
+   </li>
+</ol>
+
+<h3>Éviter les cas particuliers</h3>
+<ol>
+   <li>Inclure les cas limites dans les boucles (première/dernière itération) </li>
+   <li>Mettre des sentinelles autour des données (si cela simplifie) </li>
+   <li>Utiliser +infini et -infini plutôt qu'une valeur arbitraire à tester</li>
+   <li>S'il est impossible d'utiliser une valeur "infinie", utiliser une variable séparée</li>
+</ol>
+
+<h3>Se limiter à un langage simple</h3>
+<ol>
+   <li>Faciliter le travail du lecteur, plus que celui du compilateur </li>
+   <li>Réduire sa palette de types au minimum</li>
+   <li>Ne pas retenir les priorités des opérateurs : utiliser des parenthèses</li>
+</ol>
+
+<h3>Simplifier les structures de données</h3>
+<ol>
+   <li>Eviter les pointeurs, préférer les tableaux aux structures dynamiques</li>
+   <li>Si une structure dynamique est nécessaire, utiliser les bibliothèques standard</li>
+   <li>Regrouper les données liées dans des tableaux, structures, ou classes</li>
+</ol>
+
+<h3>Bien présenter son code</h3>
+<ol>
+   <li>Mettre la structure du code bien en évidence</li>
+   <li>Ne mettre qu'une seule instruction par ligne</li>
+   <li>Bien choisir où mettre des espaces</li>
+   <li>Eviter les commentaires au milieu du code</li>
+</ol>
+
+<h3>Se fixer des conventions</h3>
+<ol>
+   <li>Ecrire ses boucles avec compteur toujours de la même manière</li>
+   <li>Ecrire les algorithmes classiques toujours de la même manière</li>
+   <li>Se fixer des règles pour nommer ses identifiants</li>
+</ol>
+
+    </div>
+    </div>
+<div class="course-read"><form action="http://www.france-ioi.org/algo/course.php?idChapter=800&amp;iOrder=10&amp;idCourse=1808&amp;idTask=1808" method="post"><input name="bRead" type="submit" value="Mark as read and continue"></form></div></div>
+
+<script type="text/javascript" src="./France-IOI – Conclusion et synthèse des conseils_files/update.js"></script></body></html>

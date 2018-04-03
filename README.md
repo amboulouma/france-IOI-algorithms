@@ -8,7 +8,7 @@ By Amine M. Boulouma [@aminemboulouma]
 
 ## Find me 
 
-* [Website - Boulouma.com](http://www.boulouma.com)
+* [Website - Boulouma.com](http://amine.boulouma.com)
 * [Youtube](https://www.youtube.com/aminemboulouma)
 * [Linkedin](https://www.linkedin.com/in/aminemboulouma)
 * [Facebook](https://www.facebook.com/aminemboulouma)
